@@ -9,8 +9,8 @@ body {
 
 .card {
     width: 250px;
-    background: #fff;
-    border-radius: 15px;
+    background: #00FFFF;
+    border-radius: 15px; /* скругление карточки */
     border: 2px solid transparent;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
@@ -25,16 +25,20 @@ body {
 }
 
 .card img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: 15px;
+    width: 220px;
+    height: auto;
+    border-radius: 15px;
+    display: block;        /* блок, чтобы убрать лишние пробелы */
+    margin: 15px auto 0;   /* сверху 15px, по горизонтали центр */
+    background: transparent;
     transition: transform 0.3s ease-in-out;
 }
 
+
+
+
 .card:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .card h2 {
@@ -46,5 +50,5 @@ body {
 .card p {
     margin: 5px 0;
     font-size: 14px;
-    color: #555;
+    color: #222;
 }
